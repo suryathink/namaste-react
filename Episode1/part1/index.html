@@ -1,0 +1,37 @@
+<!-- ! What is CDN -->
+<!-- ! Why only 2 CDN Link-->
+
+<!-- ! what is crossorigin meaning -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- this hello world will get replaced (not appended) by root.render  -->
+      <h2>Hello World</h2>
+    </div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <!-- How to create h1 tag in react -->
+
+    <script>
+      const heading = React.createElement("h1", {}, "Hello World From React"); // creating a react element
+
+      const root = ReactDOM.createRoot(document.getElementById("root")); // created a root element inside react, everything will render here
+
+      root.render(heading);
+    </script>
+  </body>
+</html>
