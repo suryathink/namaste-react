@@ -1,0 +1,11 @@
+npx parcel index.html
+
+TODO
+1. Create a react app without using cdn links
+2. What is this in  package.json `"browsersList": [
+    "last 10 Chrome version",
+    "last 2 Firebase version"
+  ]`
+
+Additional Links -> https://github.com/browserslist/browserslist
+-> https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z
